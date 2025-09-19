@@ -5,3 +5,7 @@
 .arima-font {
     font-family: "Arima", system-ui;
 }
+
+* {
+    font-family: "Inter", sans-serif;
+}
