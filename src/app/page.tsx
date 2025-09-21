@@ -1,5 +1,6 @@
+import Navbar from "@/components/navbar";
 import Image from "next/image";
-import Link from "next/link";
+
 export default function Home() {
   return (
     <div
@@ -7,39 +8,16 @@ export default function Home() {
         backgroundImage: `url(/hero_bg.svg)`,
         backgroundSize: "160% auto",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "center 70%",
+        backgroundPosition: "center 100%",
       }}
-      className="text-white bg-[#0B1414] h-screen"
+      className="bg-[#0B1414]"
     >
-      <header className="absolute top-0 z-50 w-full transition-all duration-300 ease-in-out">
-        <nav className="flex items-center justify-between py-5 max-w-6xl mx-auto">
-          <h1 className="arima-font font-semibold text-3xl">design forge</h1>
-          <div className="flex items-center gap-8">
-            <ul className="flex gap-2 arima-font items-center bg-gradient-to-r from-[#0B4040]/50 to-[#0D2A2A] text-sm font-medium rounded-full max-w-max px-2">
-              <li className="px-3 py-2">
-                <Link href="#home">Home</Link>
-              </li>
-              <li className="px-3 py-2">
-                <Link href="#pricing">Pricing</Link>
-              </li>
-              <li className="px-3 py-2">
-                <Link href="#projects">Projects</Link>
-              </li>
-              <li className="px-3 py-2">
-                <Link href="#services">Services</Link>
-              </li>
-              <li className="px-3 py-2">
-                <Link href="#faq">FAQ</Link>
-              </li>
-            </ul>
-            <button className="rounded-full cursor-pointer hover:bg-[#EBFFFF] hover:text-[#0C5E5E] active:scale-95  transition-all duration-200 px-5 py-[10px] font-bold border-[1px]">
-              Book a call
-            </button>
-          </div>
-        </nav>
+      <header>
+        <Navbar />
       </header>
       <main className="pt-[106]">
-        <div id="#home" className="max-w-3xl mx-auto relative">
+        <div id="#home" className="max-w-3xl mx-auto relative text-white">
+          <div className="w-200 h-200 rounded-full blur-3xl absolute -top-80 -left-40 bg-radial from-[#00ADAD]/30 to-[#00ADAD]/0"></div>
           <div className="text-center pt-12 flex flex-col gap-2 items-center">
             <div className="flex items-center gap-3 font-semibold">
               <div className="h-4 w-4 bg-radial from-[#41C16B] rounded-full"></div>
@@ -60,39 +38,96 @@ export default function Home() {
                 Free ui ux audit
               </button>
             </div>
-            <div className="flex items-center gap-3 font-bold mt-8">
+            <div className="flex items-center gap-4 font-bold mt-8">
               <span>Trusted by</span>
               <div className="flex items-center">
                 <Image
                   className="rounded-full -m-1 hover:z-50 border border-white"
-                  height={36}
-                  width={36}
+                  height={32}
+                  width={32}
                   src={"/1.avif"}
                   alt="image"
                 />
                 <Image
                   className="rounded-full -m-1 hover:z-50 border border-white"
-                  height={36}
-                  width={36}
+                  height={32}
+                  width={32}
                   src={"/2.avif"}
                   alt="image"
                 />
                 <Image
                   className="rounded-full -m-1 hover:z-50 border border-white"
-                  height={36}
-                  width={36}
+                  height={32}
+                  width={32}
                   src={"/3.avif"}
                   alt="image"
                 />
                 <Image
                   className="rounded-full -m-1 hover:z-50 border border-white"
-                  height={36}
-                  width={36}
+                  height={32}
+                  width={32}
                   src={"/4.avif"}
                   alt="image"
                 />
               </div>
               <span>120+ high-growth startups</span>
+            </div>
+          </div>
+        </div>
+        <div
+          id="servicesContainer"
+          className="flex mt-15 mx-auto max-w-[1440px] max-h-[540px] overflow-hidden "
+        >
+          <div className="relative pt-8 bg-[#F3BE00] overflow-hidden space-y-5 pl-6">
+            <div className="absolute w-78 h-78 -top-[30%] -left-[30%] bg-[#FFD64E] blur-[150px]"></div>
+            <h1 className="text-[44px] relative font-bold z-50 text-black">
+              Web Design
+            </h1>
+            <div className="w-[338px] relative h-[440px]">
+              <img
+                className="w-full h-full object-cover object-top-left"
+                src="/WebDesign.png"
+                alt="web design"
+              />
+            </div>
+          </div>
+          <div className="relative pt-8 bg-[#EFB15B] overflow-hidden space-y-5 pl-6 border-l-10 border-[#ffffff66]">
+            <div className="absolute w-78 h-78 -top-[30%] -left-[30%] bg-[#DDFA00] blur-[150px]"></div>
+            <h1 className="text-[44px] relative font-bold z-50 text-black">
+              Mobile Apps
+            </h1>
+            <div className="w-[338px] relative h-[440px]">
+              <img
+                className="w-full h-full object-cover object-top-left"
+                src="/mobile.png"
+                alt="web design"
+              />
+            </div>
+          </div>
+          <div className="relative pt-8 bg-[#33C749] overflow-hidden space-y-5 pl-6 border-l-10 border-[#ffffff66]">
+            <div className="absolute w-78 h-78 -top-[30%] -left-[30%] bg-[#B6F9C0] blur-[150px]"></div>
+            <h1 className="text-[44px] relative font-bold z-50 text-black">
+              SaaS Design
+            </h1>
+            <div className="w-[338px] relative h-[440px]">
+              <img
+                className="w-full h-full object-cover object-left"
+                src="/SaaSDesign.png"
+                alt="web design"
+              />
+            </div>
+          </div>
+          <div className="relative pt-8 bg-[#3335C7] overflow-hidden space-y-5 pl-6 border-l-10 border-[#ffffff66]">
+            <div className="absolute w-78 h-78 -top-[30%] -left-[30%] bg-[#9193FF] blur-[150px]"></div>
+            <h1 className="text-[44px] relative font-bold z-50 text-white">
+              UX Design
+            </h1>
+            <div className="w-[338px] relative h-[440px]">
+              <img
+                className="w-full h-full object-cover object-left"
+                src="/DashboardDesign.png"
+                alt="web design"
+              />
             </div>
           </div>
         </div>
