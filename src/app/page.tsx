@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Image from "next/image";
+import Marquee from "react-fast-marquee";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
         <Navbar />
       </header>
       <main className="pt-[106]">
-        <div id="#home" className="max-w-3xl mx-auto relative text-white">
+        <section id="#home" className="max-w-3xl mx-auto relative text-white">
           <div className="w-200 h-200 rounded-full blur-3xl absolute -top-80 -left-40 bg-radial from-[#00ADAD]/30 to-[#00ADAD]/0"></div>
           <div className="text-center pt-12 flex flex-col gap-2 items-center">
             <div className="flex items-center gap-3 font-semibold">
@@ -73,10 +74,10 @@ export default function Home() {
               <span>120+ high-growth startups</span>
             </div>
           </div>
-        </div>
-        <div
+        </section>
+        <section
           id="servicesContainer"
-          className="flex mt-15 mx-auto max-w-[1440px] max-h-[540px] overflow-hidden "
+          className="flex mt-15 mx-auto max-w-[1440px] max-h-[540px] overflow-hidden"
         >
           <div className="relative pt-8 bg-[#F3BE00] overflow-hidden space-y-5 pl-6">
             <div className="absolute w-78 h-78 -top-[30%] -left-[30%] bg-[#FFD64E] blur-[150px]"></div>
@@ -130,7 +131,36 @@ export default function Home() {
               />
             </div>
           </div>
-        </div>
+        </section>
+        <section className="text-white">
+          <div className="flex gap-10 max-w-[1200px] pt-9 mx-auto">
+            <h4 className="text-sm shrink-0">
+              Trusted by 120+ <br />
+              Happy Clients
+            </h4>
+            <Marquee
+              speed={15}
+              gradient
+              gradientColor="#0B1414"
+              pauseOnHover
+              direction="right"
+              className="flex gap-14"
+            >
+              <div className="flex gap-14">
+                <img src="/1.svg" alt="" />
+                <img src="/2.svg" alt="" />
+                <img src="/3.svg" alt="" />
+                <img src="/4.svg" alt="" />
+                <img src="/5.svg" alt="" />
+                <img src="/2.svg" alt="" />
+                <img src="/5.svg" alt="" />
+                <img src="/4.svg" alt="" />
+                <img src="/1.svg" alt="" />
+                <img src="/6.svg" alt="" />
+              </div>
+            </Marquee>
+          </div>
+        </section>
       </main>
     </div>
   );
