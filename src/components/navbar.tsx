@@ -63,8 +63,8 @@ export default function Navbar() {
           </ul>
           <button
             className={`rounded-full cursor-pointer hover:bg-[#EBFFFF] ${
-              isFixed && "text-[#0C5E5E] border-[#0C5E5E]"
-            } hover:text-[#0C5E5E] active:scale-95  transition-all duration-200 px-5 py-[10px] font-bold border-[1px]`}
+              isFixed && "text-[#0C5E5E]/90 border-[#0C5E5E]/90"
+            } hover:text-[#0C5E5E] active:scale-95  transition-all duration-200 px-5 py-[10px] font-semibold border-[1px]`}
           >
             Book a call
           </button>

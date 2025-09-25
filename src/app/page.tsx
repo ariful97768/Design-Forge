@@ -325,6 +325,60 @@ export default function Home() {
             </div>
           </Marquee>
         </section>
+        <section className="w-full bg-white">
+          <div className="max-w-[1200px] mx-auto py-20">
+            <div className="grid grid-cols-3 gap-5">
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                UI/UX Design
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Website Design
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Mobile App Design
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                SaaS Design
+              </div>
+              <div className="text-center h-32 flex items-center justify-center">
+                <h1 className="arima-font font-semibold text-3xl text-[#0C5E5E]">
+                  design forge
+                </h1>
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Free ui ux audit
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Website/App <br /> Development
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Webflow <br /> Development
+              </div>
+              <div className="border-gray-400 hover:border-[#0E8C8C] text-2xl border hover:bg-gray-100 text-center h-32 flex items-center justify-center rounded-3xl">
+                Prototype
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-[#0C5E5E] text-white">
+          <div className="max-w-[1200px] mx-auto flex gap-[140px] py-13">
+            <h1 className="arima-font font-semibold shrink-0 text-5xl">
+              design forge
+            </h1>
+            <div>
+              <p className="text-[32px] leading-12">
+                ilmora agency is a UI/UX agency crafting intuitive,
+                conversion-driven digital experiences. We blend research,
+                strategy, and bold aesthetics to turn complexity into clarity.
+              </p>
+              <p className="text-[32px] leading-12 mt-6">
+                From discovery to delivery, we design accessible, scalable
+                websites and apps people love. Partner with us to ship faster,
+                stand out, and grow with design that performs.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
