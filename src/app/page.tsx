@@ -1,8 +1,212 @@
 import Navbar from "@/components/navbar";
+import ToggleMenu from "@/components/toggle";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 export default function Home() {
+  const data = [
+    {
+      title: "Free",
+      price: "$00",
+      isPopular: false,
+      services: [
+        {
+          title: "UI UX audit",
+          isServed: true,
+        },
+        {
+          title: "Free Consultation",
+          isServed: true,
+        },
+        {
+          title: "Competitive analysis",
+          isServed: false,
+        },
+        {
+          title: "100% Money-Back Guarantee",
+          isServed: false,
+        },
+        {
+          title: "logo design",
+          isServed: false,
+        },
+        {
+          title: "Pages design",
+          isServed: false,
+        },
+        {
+          title: "Mobile responsive",
+          isServed: false,
+        },
+        {
+          title: "Revision",
+          isServed: false,
+        },
+        {
+          title: "Any social media post",
+          isServed: false,
+        },
+        {
+          title: "Delivery",
+          isServed: false,
+        },
+        {
+          title: "Figma Prototype",
+          isServed: false,
+        },
+        {
+          title: "Source file",
+          isServed: false,
+        },
+        {
+          title: "Color theme support",
+          isServed: false,
+        },
+        {
+          title: "Multilingual support",
+          isServed: false,
+        },
+        {
+          title: "Development",
+          isServed: false,
+        },
+      ],
+    },
+    {
+      title: "Standard",
+      price: "$1,299-$1,499",
+      isPopular: true,
+      services: [
+        {
+          title: "UI UX audit",
+          isServed: true,
+        },
+        {
+          title: "Free Consultation",
+          isServed: true,
+        },
+        {
+          title: "Competitive analysis",
+          isServed: true,
+        },
+        {
+          title: "100% Money-Back Guarantee",
+          isServed: true,
+        },
+        {
+          title: "logo design",
+          isServed: true,
+        },
+        {
+          title: "1-5 Pages",
+          isServed: true,
+        },
+        {
+          title: "Mobile responsive",
+          isServed: true,
+        },
+        {
+          title: "Unlimited Revision",
+          isServed: true,
+        },
+        {
+          title: "Any 3 social media post",
+          isServed: true,
+        },
+        {
+          title: "10 days delivery",
+          isServed: true,
+        },
+        {
+          title: "Figma Prototype",
+          isServed: true,
+        },
+        {
+          title: "Source file",
+          isServed: true,
+        },
+        {
+          title: "Color theme support",
+          isServed: true,
+        },
+        {
+          title: "Multilingual support",
+          isServed: false,
+        },
+        {
+          title: "Development",
+          isServed: false,
+        },
+      ],
+    },
+    {
+      title: "Premium",
+      price: "$6,999",
+      isPopular: false,
+      services: [
+        {
+          title: "UI UX audit",
+          isServed: true,
+        },
+        {
+          title: "Free Consultation",
+          isServed: true,
+        },
+        {
+          title: "Competitive analysis",
+          isServed: true,
+        },
+        {
+          title: "100% Money-Back Guarantee",
+          isServed: true,
+        },
+        {
+          title: "logo design and Branding guideline",
+          isServed: true,
+        },
+        {
+          title: "05-15 Pages",
+          isServed: true,
+        },
+        {
+          title: "Mobile responsive",
+          isServed: true,
+        },
+        {
+          title: "Unlimited Revision",
+          isServed: true,
+        },
+        {
+          title: "Any 6 social media post",
+          isServed: true,
+        },
+        {
+          title: "25-30 days delivery",
+          isServed: true,
+        },
+        {
+          title: "Figma Prototype",
+          isServed: true,
+        },
+        {
+          title: "Source file",
+          isServed: true,
+        },
+        {
+          title: "Color theme support",
+          isServed: true,
+        },
+        {
+          title: "Multilingual support",
+          isServed: true,
+        },
+        {
+          title: "No Code Development",
+          isServed: true,
+        },
+      ],
+    },
+  ];
   return (
     <div className="bg-[#0B1414]">
       <header>
@@ -367,7 +571,7 @@ export default function Home() {
             </h1>
             <div>
               <p className="text-[32px] leading-12">
-                ilmora agency is a UI/UX agency crafting intuitive,
+                design forge is a UI/UX agency crafting intuitive,
                 conversion-driven digital experiences. We blend research,
                 strategy, and bold aesthetics to turn complexity into clarity.
               </p>
@@ -376,6 +580,131 @@ export default function Home() {
                 websites and apps people love. Partner with us to ship faster,
                 stand out, and grow with design that performs.
               </p>
+            </div>
+          </div>
+        </section>
+        <section className="bg-[#F5F5F5]">
+          <div className="max-w-[1200px] flex flex-col gap-8 pt-12 pb-20 mx-auto">
+            <div className="text-center space-y-2">
+              <h1 className="font-semibold text-[40px]">Price per page</h1>
+              <p className="text-[#707070] max-w-lg leading-6 mx-auto">
+                It is a long established fact that a reader will be distracted
+                by the readable content of a page when looking at its layout.
+              </p>
+            </div>
+           <ToggleMenu/>
+            <div className="w-full flex justify-center gap-5">
+              {/* Card Start */}
+              {data.map((d) => (
+                // outer layer
+                <div
+                  key={d.title}
+                  className={`p-[14px] rounded-[20px] border border-transparent shadow-md ${
+                    d.isPopular
+                      ? "hover:border-white bg-[#0C5E5E]"
+                      : "hover:border-[#0C5E5E] bg-white"
+                  } w-full`}
+                >
+                  {/* inner layer */}
+                  <div
+                    className={`px-4 py-5 ${
+                      d.isPopular
+                        ? "text-white bg-[#0E7171] border-[#0E8C8C]"
+                        : "text-[#0C5E5E] border-[#E3E3E3] bg-[#F5F5F5]"
+                    } border rounded-2xl flex flex-col`}
+                  >
+                    {/* heading */}
+                    <div className="flex h-10 items-center justify-between">
+                      <h3 className="text-3xl font-semibold">{d.title}</h3>
+                      {d.isPopular && (
+                        <span className="text-lg bg-[#FFE138] px-[14px] py-2 rounded-xl font-medium text-[#0B1414]">
+                          Popular
+                        </span>
+                      )}
+                    </div>
+                    {/* lists */}
+                    <ul className={`mt-8 grow flex flex-col gap-[10px]`}>
+                      {d.services.map((service, idx) => (
+                        <li
+                          key={idx}
+                          className={`flex pb-[10px] border-b ${
+                            d.isPopular
+                              ? "border-b-[#0E8C8C]"
+                              : "border-b-[#E3E3E3]"
+                          } items-center gap-3 w-full`}
+                        >
+                          <div>
+                            {service.isServed ? (
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 25"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M5 15C5 15 6.5 15 8.5 18.5C8.5 18.5 14.0588 9.33333 19 7.5"
+                                  stroke={`${
+                                    d.isPopular ? "#ffffff" : "#0C5E5E"
+                                  }`}
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            ) : (
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M19 5L5 19M5 5L19 19"
+                                  stroke="#b1b1b1"
+                                  strokeWidth="1.5"
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                />
+                              </svg>
+                            )}
+                          </div>
+                          <span
+                            className={` ${
+                              service.isServed
+                                ? "font-semibold"
+                                : "text-[#908d8d]"
+                            }`}
+                          >
+                            {service.title}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  {/* price and action button */}
+                  <div className="pt-6 space-y-6">
+                    <h1
+                      className={`${
+                        d.isPopular ? "text-white/95" : "text-black/95"
+                      } font-semibold text-[40px]`}
+                    >
+                      {d.price}
+                    </h1>
+                    <button
+                      className={`w-full ${
+                        d.isPopular
+                          ? "bg-white hover:bg-[#00F5F5] hover:text-[#0B1414] text-[#0C5E5E]"
+                          : "bg-[#0C5E5E] text-white hover:bg-black"
+                      } rounded-full p-[10px] transition-colors duration-200 font-semibold cursor-pointer`}
+                    >
+                      Book a call
+                    </button>
+                  </div>
+                </div>
+              ))}
+              {/* Card End */}
             </div>
           </div>
         </section>

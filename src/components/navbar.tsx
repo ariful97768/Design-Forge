@@ -27,7 +27,7 @@ export default function Navbar() {
     >
       <div
         className={`flex items-center ${
-          isFixed && "bg-white rounded-2xl"
+          isFixed && "bg-white rounded-2xl shadow-lg"
         } justify-between py-5 max-w-7xl px-8 mx-auto`}
       >
         <h1
