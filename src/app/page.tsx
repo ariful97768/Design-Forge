@@ -1,3 +1,5 @@
+import Feedbacks from "@/components/carousel";
+import Carousel from "@/components/carousel";
 import Navbar from "@/components/navbar";
 import ToggleMenu from "@/components/toggle";
 import Image from "next/image";
@@ -592,7 +594,7 @@ export default function Home() {
                 by the readable content of a page when looking at its layout.
               </p>
             </div>
-           <ToggleMenu/>
+            <ToggleMenu />
             <div className="w-full flex justify-center gap-5">
               {/* Card Start */}
               {data.map((d) => (
@@ -707,6 +709,19 @@ export default function Home() {
               {/* Card End */}
             </div>
           </div>
+        </section>
+        {/* className="py-20 border-red-400 border-2 bg-white justify-center items-center flex" */}
+        <section className="py-20 bg-white">
+          <div className="text-center">
+            <h1 className="text-[40px] font-semibold pb-[10px]">
+              They Loved Working With Us
+            </h1>
+            <p className="max-w-[450px] mx-auto text-lg text-[#707070]">
+              From design sprints to full-stack launches, our clients share
+              their wins.
+            </p>
+          </div>
+          <Feedbacks />
         </section>
       </main>
     </div>

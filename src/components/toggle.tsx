@@ -12,7 +12,7 @@ export default function ToggleMenu() {
         onClick={() => setToggle("website")}
         className={`px-6 py-2 cursor-pointer rounded-full ${
           toggle === "website"
-            ? "bg-[#0C5E5E] font-semibold text-[#F5F5F5]"
+            ? "bg-[#0C5E5E] text-[#F5F5F5]"
             : "bg-[#F5F5F5] text-[#0B1414]"
         }`}
       >
@@ -22,7 +22,7 @@ export default function ToggleMenu() {
         onClick={() => setToggle("mobile")}
         className={`px-6 py-2 cursor-pointer rounded-full ${
           toggle === "mobile"
-            ? "bg-[#0C5E5E] font-semibold text-[#F5F5F5]"
+            ? "bg-[#0C5E5E] text-[#F5F5F5]"
             : "bg-[#F5F5F5] text-[#0B1414]"
         }`}
       >
@@ -32,7 +32,7 @@ export default function ToggleMenu() {
         onClick={() => setToggle("dashboard")}
         className={`px-6 py-2 cursor-pointer rounded-full ${
           toggle === "dashboard"
-            ? "bg-[#0C5E5E] font-semibold text-[#F5F5F5]"
+            ? "bg-[#0C5E5E] text-[#F5F5F5]"
             : "bg-[#F5F5F5] text-[#0B1414]"
         }`}
       >
