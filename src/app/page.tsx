@@ -710,8 +710,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* className="py-20 border-red-400 border-2 bg-white justify-center items-center flex" */}
-        <section className="py-20 bg-white">
+        <section
+          style={{
+            backgroundImage: "url(/testimonial_bg.svg)",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            backgroundPosition: "center",
+          }}
+          className="py-15 bg-white"
+        >
           <div className="text-center">
             <h1 className="text-[40px] font-semibold pb-[10px]">
               They Loved Working With Us
@@ -722,6 +729,170 @@ export default function Home() {
             </p>
           </div>
           <Feedbacks />
+        </section>
+        <section className="py-13 bg-white">
+          <div className="text-center max-w-[600px] mx-auto">
+            <h1 className="text-[40px] font-semibold pb-[10px]">
+              Got Questions? We’ve Got Answers.
+            </h1>
+            <p className="text-lg text-[#707070]">
+              Here’s everything you need to know before partnering with{" "}
+              <span className="font-bold">design forge</span>.
+            </p>
+          </div>
+          <div className="flex mt-15 gap-6 max-w-[1200px] w-full mx-auto justify-center relative">
+            <div className="basis-[65%] grow flex flex-col gap-4">
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  What industries do you work with?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  Can you work with tight deadlines?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  What if I don&apos;t have brand guidelines or a clear brand
+                  identity?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  How do we communicate and collaborate during projects?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  How soon can you start working together?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  How do you ensure the quality of your designs and code?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  How do I provide feedback on designs and deliverables?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  Do you handle copywriting, or do I need to provide content?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  Can you help startups with limited budgets?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  How do I get started with design forge?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+              <details className="marker:content-none pb-4 border-b border-b-[#e5e7eb]">
+                <summary className="text-lg text-[#0B1414] font-semibold cursor-pointer">
+                  What&apos;s your refund policy?
+                </summary>
+                <p className="pt-4 pr-6 text-[#707070] leading-6">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Officiis at asperiores optio incidunt expedita eius earum
+                  consectetur repudiandae iusto soluta, similique dolorum
+                  obcaecati nemo id dignissimos libero, perferendis distinctio
+                  nobis.
+                </p>
+              </details>
+            </div>
+            <aside className="bg-[#0C5E5E] shrink-0 w-full max-w-[386px] h-full max-h-[286px] text-white p-4 rounded-[20px] sticky top-[140px]">
+              <div className="mx-auto p-6 bg-[#0E7171] rounded-[14px] border border-[#1F8C8C]">
+                <div>
+                  <h1 className="text-3xl font-bold leading-10">
+                    Got Questions? We&apos;ve Got Answers
+                  </h1>
+                  <p className="text-[#EBFFFF] mt-2 mb-6">
+                    Feel free to reach out to us if you can&apos;t find the
+                    answer you&apos;re looking for.
+                  </p>
+                  <button className="rounded-full w-full cursor-pointer hover:bg-[#00F5F5] active:scale-95  transition-all duration-200 px-5 py-[10px] font-bold bg-white text-black">
+                    Book a call
+                  </button>
+                </div>
+              </div>
+            </aside>
+          </div>
         </section>
       </main>
     </div>
