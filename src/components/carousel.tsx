@@ -2,12 +2,6 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const images = [
-  "https://picsum.photos/id/1018/600/400",
-  "https://picsum.photos/id/1025/600/400",
-  "https://picsum.photos/id/1037/600/400",
-];
-
 export default function Feedbacks() {
   const [current, setCurrent] = useState(0);
   const quotes = [
