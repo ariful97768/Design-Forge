@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -41,38 +42,34 @@ export default function Feedbacks() {
   return (
     <div className="max-w-max overflow-hidden mx-auto pt-8">
       <div
-        className="max-w-[900px] mx-auto transition-transform duration-700 ease-in-out flex"
+        className="lg:max-w-[900px] w-full mx-auto transition-transform duration-700 ease-in-out flex"
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {quotes.map((quote, idx) => (
           <div
             key={idx}
-            className=" w-[900px] shrink-0 transition-transform duration-700 ease-in-out flex flex-col items-center justify-center text-center"
+            className="px-4 w-full shrink-0 transition-transform duration-700 ease-in-out flex flex-col items-center justify-center text-center"
           >
-            <div className="relative mb-10 px-17">
-              <Image
+            <div className="relative mb-10 pt-4 sm:pt-6 pb-3 md:pt-0 md:pb-0 md:px-17">
+              <img
                 src={"/quote.svg"}
-                width={50}
-                height={50}
-                className="absolute -top-5 left-0 rotate-180"
+                className="absolute h-8 w-8 md:w-12 md:h-12 -top-5 left-0 rotate-180"
                 alt="quote"
               />
-              <Image
+              <img
                 src={"/quote.svg"}
-                width={50}
-                height={50}
-                className="absolute -bottom-5 right-0"
+                className="absolute h-8 w-8 md:w-12 md:h-12 -bottom-5 right-0"
                 alt="quote"
               />
-              <p className="font-medium text-[26px]">{quote.text}</p>
+              <p className="font-medium text-sm sm:text-base md:text-[26px]">
+                {quote.text}
+              </p>
             </div>
             <div className="space-y-3">
-              <Image
-                className="rounded-full object-cover"
+              <img
+                className="rounded-full w-15 h-15 md:w-20 md:h-20 object-cover"
                 src={quote.image}
                 alt="profile"
-                width={80}
-                height={80}
               />
               <div>
                 <p className="text-lg font-bold pb-1">{quote.name}</p>
