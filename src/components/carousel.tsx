@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 
 export default function Feedbacks() {
@@ -37,7 +36,7 @@ export default function Feedbacks() {
     }, 3000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [quotes.length]);
 
   return (
     <div className="max-w-max overflow-hidden mx-auto pt-8">
