@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Feedbacks from "@/components/carousel";
 import Navbar from "@/components/navbar";
 import ToggleMenu from "@/components/toggle";
@@ -407,16 +408,56 @@ export default function Home() {
               className="flex gap-10 md:gap-14"
             >
               <div className="flex gap-10 md:gap-14 h-6 sm:h-9 md:h-10">
-                <img className="w-full h-full object-contain" src="/1.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/2.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/3.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/4.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/5.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/2.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/5.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/4.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/1.svg" alt="" />
-                <img className="w-full h-full object-contain" src="/6.svg" alt="" />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/1.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/2.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/3.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/4.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/5.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/2.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/5.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/4.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/1.svg"
+                  alt=""
+                />
+                <img
+                  className="w-full h-full object-contain"
+                  src="/6.svg"
+                  alt=""
+                />
               </div>
             </Marquee>
           </div>
@@ -501,7 +542,7 @@ export default function Home() {
               </p>
             </div>
             <ToggleMenu />
-            <div className="flex md:py-5 md:px-10 flex-col overflow-x-auto sm:flex-row mx-auto sm:mx-0 xl:max-w-[1200px] gap-5">
+            <div className="flex md:py-5 md:px-10 lg:px-0 flex-col overflow-x-auto sm:flex-row mx-auto sm:mx-0 xl:max-w-[1200px] gap-5">
               {/* Card Start */}
               {data.map((d) => (
                 // outer layer
@@ -681,48 +722,135 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <footer className="text-white hidden relative">
-        <h1 className="arima-font font-semibold text-center absolute -top-15 border text-[200px] text-[#828282]">
+      <footer>
+        <div className="text-white z-20 relative max-w-[1440px] mx-auto">
+          {/* <h1 className="arima-font absolute z-1 -top-20 left-1/2 whitespace-nowrap -translate-x-1/2 font-semibold text-center border-4 border-red-400 text-[200px] text-[#828282]">
           design forge
-        </h1>
-        <div className="flex items-center py-6 border-t border-t-[#1D3535] justify-between max-w-[1200px] mx-auto">
-          <p className="text-lg font-semibold">
-            © 2025 <span className="arima-font">design forge.</span> All Rights
-            Reserved
-          </p>
-          <div className="flex items-center gap-5">
-            <Link href={"#"}>
-              <Image
-                src={"/social/facebook.svg"}
-                width={24}
-                height={24}
-                alt="facebook"
-              />
-            </Link>
-            <Link href={"#"}>
-              <Image
-                src={"/social/linkedin.svg"}
-                width={24}
-                height={24}
-                alt="linkedin"
-              />
-            </Link>
-            <Link href={"#"}>
-              <Image
-                src={"/social/dribbble.svg"}
-                width={24}
-                height={24}
-                alt="dribbble"
-              />
-            </Link>
-            <Link href={"#"}>
-              <Image
-                src={"/social/behance.svg"}
-                width={24}
-                height={24}
-                alt="behance"
-              />
-            </Link>
+        </h1> */}
+          <div className="py-12 flex flex-col gap-8 sm:gap-6 md:gap-3">
+            <div className="relative z-10">
+              <div className="absolute text-white/90 sm:top-[12%] lg:top-[22%] w-full flex items-center justify-between">
+                <div className="flex px-2 sm:px-5 text-[12px] sm:text-sm md:text-base items-center justify-between w-full">
+                  <span>Website</span>
+                  <span>Mobile</span>
+                  <span className="md:ml-[25%]">Dashboard</span>
+                  <span>SaaS</span>
+                </div>
+              </div>
+
+              <div className="max-w-[640px] mx-auto px-5 md:px-0 h-auto w-full">
+                <img
+                  className="w-full h-auto object-contain"
+                  src="/owner.avif"
+                  alt="owner"
+                />
+              </div>
+            </div>
+            <button
+              className={`rounded-full cursor-pointer bg-[#EBFFFF] text-black active:scale-95  transition-all duration-200 px-8 py-2.5 max-w-39 mx-auto font-semibold border-[1px]`}
+            >
+              Book a call
+            </button>
+          </div>
+          <div className="px-5">
+            <div className="mx-auto mb-6 gap-8 flex flex-col items-center justify-center ">
+              <h1 className="arima-font text-[26px] md:text-5xl font-semibold">
+                design forge
+              </h1>
+              <div>
+                <ul className="flex flex-wrap gap-6 items-center justify-center arima-font text-sm md:text-base font-medium rounded-full max-w-max">
+                  <li>
+                    <Link href="#home">Home</Link>
+                  </li>
+                  <li>
+                    <Link href="#pricing">Pricing</Link>
+                  </li>
+                  <li>
+                    <Link href="#projects">Projects</Link>
+                  </li>
+                  <li>
+                    <Link href="#services">Services</Link>
+                  </li>
+                  <li>
+                    <Link href="#faq">FAQ</Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div className="flex mb-6 justify-center md:hidden items-center gap-5">
+              <Link href={"#"}>
+                <Image
+                  src={"/social/facebook.svg"}
+                  width={24}
+                  height={24}
+                  alt="facebook"
+                />
+              </Link>
+              <Link href={"#"}>
+                <Image
+                  src={"/social/linkedin.svg"}
+                  width={24}
+                  height={24}
+                  alt="linkedin"
+                />
+              </Link>
+              <Link href={"#"}>
+                <Image
+                  src={"/social/dribbble.svg"}
+                  width={24}
+                  height={24}
+                  alt="dribbble"
+                />
+              </Link>
+              <Link href={"#"}>
+                <Image
+                  src={"/social/behance.svg"}
+                  width={24}
+                  height={24}
+                  alt="behance"
+                />
+              </Link>
+            </div>
+            <div className="flex items-center py-6 border-t border-t-[#1D3535] justify-center md:justify-between max-w-[1200px] mx-auto">
+              <p className="text-sm sm:text-base md:text-lg font-semibold">
+                © 2025 <span className="arima-font">design forge.</span> All
+                Rights Reserved
+              </p>
+              <div className="hidden md:flex items-center gap-5">
+                <Link href={"#"}>
+                  <Image
+                    src={"/social/facebook.svg"}
+                    width={24}
+                    height={24}
+                    alt="facebook"
+                  />
+                </Link>
+                <Link href={"#"}>
+                  <Image
+                    src={"/social/linkedin.svg"}
+                    width={24}
+                    height={24}
+                    alt="linkedin"
+                  />
+                </Link>
+                <Link href={"#"}>
+                  <Image
+                    src={"/social/dribbble.svg"}
+                    width={24}
+                    height={24}
+                    alt="dribbble"
+                  />
+                </Link>
+                <Link href={"#"}>
+                  <Image
+                    src={"/social/behance.svg"}
+                    width={24}
+                    height={24}
+                    alt="behance"
+                  />
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </footer>
