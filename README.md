@@ -1,40 +1,26 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Design Forge
 
-## Getting Started
+A fully responsive single-page website — a **clone of [Ilmora Agency](https://ilmora.agency)** — built to practice modern web layout, responsiveness, and design precision.
 
-First, run the development server:
+* 100% responsive design for all screen sizes
+* Smooth animations and transitions
+* Pixel-perfect layout inspired by Ilmora Agency
+* Organized and reusable component structure
+* Clean, modern UI with semantic HTML
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+* **Next.js**
+* **Tailwind CSS**
+* **JavaScript (ES6)**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Live Preview:** [Design Forge](https://design-forgee.vercel.app/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This project was built as a **front-end design practice** to replicate a professional agency layout and enhance responsive web design skills.
 
-## Learn More
+## Author
 
-To learn more about Next.js, take a look at the following resources:
+**Ariful Islam**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-=======
-# Design-Forge
->>>>>>> 23fe97f76b02f76b401ad950c6fdb5d13241fae3
+* GitHub: [@ariful97768](https://github.com/ariful97768)
+* LinkedIn: [ariful-axf](https://linkedin.com/in/ariful-axf)
