@@ -704,9 +704,9 @@ export default function Home() {
               ))}
             </div>
             <aside className="bg-[#0C5E5E] mx-auto shrink-0 w-full max-w-[386px] h-full max-h-[286px] text-white p-4 rounded-[20px] md:sticky top-[140px]">
-              <div className="mx-auto p-6 bg-[#0E7171] rounded-[14px] border border-[#1F8C8C]">
+              <div className="mx-auto p-2 md:p-6 bg-[#0E7171] rounded-[14px] border border-[#1F8C8C]">
                 <div>
-                  <h1 className="text-3xl font-bold leading-10">
+                  <h1 className="text-2xl leading-8 sm:text-[28px] font-bold sm:leading-10">
                     Got Questions? We&apos;ve Got Answers
                   </h1>
                   <p className="text-[#EBFFFF] mt-2 mb-6">
